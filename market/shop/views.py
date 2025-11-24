@@ -39,9 +39,7 @@ def dashboard(request):
          #check email if it exist in the database
         if Member.objects.filter(email=email).exists():
             messages.error(request,"email already taken")
-            return render(request,'mart/dashboard.html')
-        
-        Member.objects.create(username = username,password = password,email = email)
+            return render(request,'mart/dashboard.html')<  Member.objects.create(username = username,password = password,email = email)
     
         return render(request,'mart/home.html')
         
