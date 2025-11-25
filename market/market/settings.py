@@ -68,10 +68,13 @@ TEMPLATES = [
     },
 ]
 
+import os
+
 ALLOWED_HOSTS = [
-     'onlinemart-hgwn.onrender.com', 
-    'localhost',
-    '127.0.0.1'
+    "localhost",
+    "127.0.0.1",
+    ".onrender.com",              # allows ALL Render domains
+    "onlinemart-hgwn.onrender.com",
 ]
 
 
@@ -140,6 +143,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = '/dashboard/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/dashboard/'
-
-#hosting on web
-ALLOWED_HOSTS = ['market.onrender.com']
