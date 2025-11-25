@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--+au^%0#h=fm+w5m52psk$x$8cebxe#u$z#8rl)tqn)@dvfl4h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ 'lastrepo-vanc.onrender.com',]
 
 
 # Application definition
@@ -68,11 +68,6 @@ TEMPLATES = [
     },
 ]
 
-import os
-
-ALLOWED_HOSTS = [
-    'lastrepo-vanc.onrender.com',
-    ]
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
