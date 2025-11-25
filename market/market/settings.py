@@ -70,9 +70,9 @@ TEMPLATES = [
 
 import os
 
-ALLOWED_HOSTS = ['lastrepo-vanc.onrender.com']
-
-
+ALLOWED_HOSTS = [
+    'lastrepo-vanc.onrender.com',
+    ]
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
