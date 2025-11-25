@@ -68,7 +68,13 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'market.wsgi.application'
+ALLOWED_HOSTS = [
+    '.onrender.com',     # Allows ANY Render subdomain
+    'ecommerce-6-4qzv.onrender.com', 
+    'localhost',
+    '127.0.0.1'
+]
+
 
 
 # Database
@@ -121,6 +127,11 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static'),
 ]
 
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
@@ -130,3 +141,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = '/dashboard/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/dashboard/'
+
+#hosting on web
+ALLOWED_HOSTS = ['market.onrender.com']
