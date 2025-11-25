@@ -69,7 +69,6 @@ TEMPLATES = [
 ]
 
 ALLOWED_HOSTS = [
-    '.onrender.com',     # Allows ANY Render subdomain
      onlinemart-hgwn.onrender.com, 
     'localhost',
     '127.0.0.1'
