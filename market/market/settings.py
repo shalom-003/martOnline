@@ -70,11 +70,7 @@ TEMPLATES = [
 
 import os
 
-ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    ".onrender.com",              # allows ALL Render domains
-]
+ALLOWED_HOSTS = ['lastrepo-vanc.onrender.com']
 
 
 
