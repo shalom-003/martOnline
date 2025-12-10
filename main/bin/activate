@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV=/home/blef7/Desktop/eShop/main
+VIRTUAL_ENV=/home/blef7/Desktop/martOnline/main
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
