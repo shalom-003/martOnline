@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--+au^%0#h=fm+w5m52psk$x$8cebxe#u$z#8rl)tqn)@dvfl4h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'martonline-1.onrender.com',]
+ALLOWED_HOSTS = [ 'martonline-a3tx.onrender.com',]
 
 
 
